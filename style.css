@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 36px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.naglowek, .stopka {
+  background: #1f3f7a;
+  display: flex;
+  align-items: center;
+  height: 15%;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.naglowek {
+  justify-content: center;
+}
+
+.stopka {
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.zawartosc {
+  display: flex;
+  height: 70%;
+}
+
+.lewa {
+  width: 40%;
+  background: #2c54a3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.tekst-lewy {
+  margin-left: 35%;
+}
+
+.naglowek-listy {
+  margin-left: -40%;
+  font-size: 50px;
+}
+
+.lista-kolorow {
+  margin-left: -20%;
+}
+
+.prawa {
+  width: 60%;
+  background: #4fc3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.obrazek-zebatek {
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 40px;
+}
+
+ul li::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  border: 4px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
